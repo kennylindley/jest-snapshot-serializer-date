@@ -1,0 +1,38 @@
+{
+  "version": "0.1",
+  "dictionaries": [
+      "bash",
+      "companies",
+      "css",
+      "en_US",
+      "filetypes",
+      "fonts",
+      "html",
+      "node",
+      "npm",
+      "softwareTerms",
+      "typescript"
+  ],
+  "ignorePaths": [
+      "/coverage/**",
+      "/node_modules/**",
+      "/tests/**/*.snap",
+      "/tmp/**",
+      "/index.css",
+      "/index.js",
+      "/yarn-error.log",
+      "/yarn.lock"
+  ],
+  "language": "en",
+  "words": [
+      "eslintcache",
+      "macos",
+      "npmjs",
+      "npmrc",
+      "serializers",
+      "simpleinout",
+      "simplymadeapps",
+      "vmware",
+      "yarnrc"
+  ]
+}

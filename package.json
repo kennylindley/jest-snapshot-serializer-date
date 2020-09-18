@@ -1,0 +1,49 @@
+{
+  "name": "jest-snapshot-serializer-date",
+  "version": "0.0.2",
+  "description": "A jest test serializer for date objects",
+  "homepage": "https://github.com/simplymadeapps/jest-snapshot-serializer-date",
+  "license": "UNLICENSED",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "cspell": "cspell",
+    "test": "jest --coverage --detectOpenHandles --forceExit",
+    "test:all": "yarn test && yarn test:spell",
+    "test:eslint": "jest --config=./tests/__support__/jest/eslint.config.js",
+    "test:lint": "yarn test:eslint",
+    "test:spell": ".jenkins/cspell.sh",
+    "test:watch": "jest -o --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplymadeapps/jest-snapshot-serializer-date.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^24.9.0",
+    "cspell": "^4.0.37",
+    "eslint": "^6.8.0",
+    "eslint-config-simplymadeapps": "^1.5.7",
+    "jest": "^24.9.0",
+    "jest-runner-eslint": "^0.7.5",
+    "jest-snapshot-serializer-function-name": "^1.1.0",
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.13",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-cpy": "^2.0.1",
+    "rollup-plugin-terser": "^5.1.3"
+  },
+
+  "jest": {
+    "snapshotSerializers": [
+      "./index.js"
+    ]
+  }
+}
